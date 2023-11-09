@@ -1,0 +1,318 @@
+/* ========== Reset ============ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Light-red: hsl(0, 100%, 67%); 
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../fonts/HankenGrotesk-ExtraBold.ttf');
+    font-weight: 800;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ========== General ============ */
+p{
+    font-size: 18px;
+}
+body{
+    background-color: var(--Pale-blue);
+    font-family: 'Hanken Grotesk';
+    position: relative;
+}
+/* ========== Main ============ */
+main{
+    background-color: var(--White);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 20px;
+
+}
+/*  Start the great section    */
+main .great{
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    color: var(--White);
+    padding: 2em 2em;
+    border-radius: 20px;
+}
+main .great p:first-child{
+    color: var(--Light-lavender);
+    margin-bottom: 10px;
+}
+main .great .circle{
+    border-radius: 50%;
+    background: linear-gradient(var(--Light-royal-blue), var(--Light-slate-blue));
+    margin: 1em 0;
+    padding: 1em 3em;
+}
+main .great .circle h1{
+    font-size: 150px;
+    font-family: 'Hanken Grotesk';
+    font-weight: bold;
+    color: var(--White)
+}
+main .great .circle p{
+    color: var(--Light-lavender);
+    font-size: 13px;
+}
+main .great p:nth-child(3){
+    margin: 1em 0;
+    font-size: 23px;
+    color: var(--White);
+}
+main .great p:nth-child(4){
+    margin: 1em 0;
+    color: var(--Light-lavender);
+    font-size: 17px;
+    padding: 0 1.2em;
+}
+/*  End the great section    */
+/*  Start the Summary section    */
+main .summary{
+    margin: 0 5em;
+    padding: 2em 1em;
+    text-align: left;
+    width: 55%;
+}
+main .summary p:first-child{
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Hanken Grotesk';
+    font-weight: bold;
+}
+/*   -------------------------------    */
+main .summary .reaction{
+    background: hsl(0, 82%, 94%);
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em 0.5em;
+    border-radius: 10px;
+}
+main .summary .reaction .bolt{
+    margin-left: 10px;
+}
+main .summary .reaction .bolt p{
+    color: hsl(0, 94%, 45%);
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .reaction .bolt p .fa-bolt{
+    color: hsl(0, 94%, 45%);
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .reaction .perc{
+    margin-left: 20px;
+}
+main .summary .reaction .perc p{
+    color: var(--Light-lavender);
+    font-size: 13px;
+    font-weight: bold;
+}
+main .summary .reaction .perc p span{
+    color: var(--Dark-gray-blue);
+}
+/*  -------------------------------------- */
+main .summary .memory{
+    background-color: hsl(37, 78%, 95%);
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em 0.5em;
+    border-radius: 10px;
+}
+main .summary .memory .brain{
+    margin-left: 10px;
+}
+main .summary .memory .brain p{
+    color: hsl(39, 72%, 76%);
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .memory .brain p .fa-brain{
+    color: hsl(39, 72%, 76%);
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .memory .mem{
+    margin-left: 20px;
+}
+main .summary .memory .mem p{
+    color: var(--Light-lavender);
+    font-size: 13px;
+    font-weight: bold;
+}
+main .summary .memory .mem p span{
+    color: var(--Dark-gray-blue);
+}
+/*  -------------------------------------- */
+main .summary .verbal{
+    background-color: hsl(167, 47%, 93%);
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em 0.5em;
+    border-radius: 10px;
+}
+main .summary .verbal .comment{
+    margin-left: 10px;
+}
+main .summary .verbal .comment p{
+    color: hsl(166, 100%, 37%);
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .verbal .comment p .fa-comment{
+    color: hsl(166, 100%, 37%);
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .verbal .verb p{
+    color: var(--Light-lavender);
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 18px;
+}
+main .summary .verbal .verb span{
+    color: var(--Dark-gray-blue);
+}
+/*   ----------------------------- */
+main .summary .visual{
+    background-color:hsl(240, 40%, 92%);
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em 0.5em;
+    border-radius: 10px;
+}
+main .summary .visual .eye{
+    margin-left: 10px;
+}
+main .summary .visual .eye p{
+    color: hsla(256, 72%, 46%, 1);
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .visual .eye p .fa-eye{
+    color: hsla(256, 72%, 46%, 1);
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+}
+main .summary .visual .vis p{
+    color: var(--Light-lavender);
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 18px;
+}
+main .summary .visual .vis p span{
+    color: var(--Dark-gray-blue);
+}
+main .summary a{
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    padding: 1.2em 6em;
+    border-radius: 18px;
+    font-size: 14px;
+    font-family: 'Hanken Grotesk';
+    margin: 5em 0;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+main .summary a:hover{
+    background-color: var(--Light-slate-blue);
+    color: var(--White);
+    padding: 1.2em 6em;
+    border-radius: 18px;
+    font-size: 14px;
+    font-family: 'Hanken Grotesk';
+    margin: 5em 0;
+    cursor: pointer;
+}
+/*  End the Summary section    */
+/*  ========= Start Footer Section  =========*/
+.attribution{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 4000%);
+}
+/*  ========= End Footer Section  =========*/
+/* ========== Media Query ============ */
+@media screen and (max-width: 600px){
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;     
+    }
+    main .summary .reaction{
+        width: 133%;
+    }
+    main .summary .memory{
+        width: 133%;
+    }
+    main .summary .verbal{
+        width: 133%;
+    }
+    main .summary .visual{
+        width: 133%;
+    }
+}
